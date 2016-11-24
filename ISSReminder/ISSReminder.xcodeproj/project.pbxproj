@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		421B40061DE6311000F1399E /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B40051DE6311000F1399E /* LocationTests.swift */; };
-		421B40081DE6338200F1399E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B40071DE6338200F1399E /* Date.swift */; };
 		425938CA1DE5F6C30012FE81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425938C91DE5F6C30012FE81 /* AppDelegate.swift */; };
-		425938CC1DE5F6C30012FE81 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425938CB1DE5F6C30012FE81 /* LocationsTableViewController.swift */; };
 		425938D11DE5F6C30012FE81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425938CF1DE5F6C30012FE81 /* Main.storyboard */; };
 		425938D31DE5F6C30012FE81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425938D21DE5F6C30012FE81 /* Assets.xcassets */; };
 		425938D61DE5F6C30012FE81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425938D41DE5F6C30012FE81 /* LaunchScreen.storyboard */; };
-		425938EE1DE5F6FC0012FE81 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425938ED1DE5F6FC0012FE81 /* Networking.swift */; };
 		425938F01DE5F7210012FE81 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425938EF1DE5F7210012FE81 /* NetworkingTests.swift */; };
-		427D4DD51DE63CE200F8BDD1 /* iss-pass-stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 427D4DD41DE63CE200F8BDD1 /* iss-pass-stub.json */; };
 		427D4DD71DE63D3400F8BDD1 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D4DD61DE63D3400F8BDD1 /* TestHelpers.swift */; };
-		427D4DD91DE6430B00F8BDD1 /* LocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D4DD81DE6430B00F8BDD1 /* LocationBuilder.swift */; };
-		427D4DDB1DE6545E00F8BDD1 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D4DDA1DE6545E00F8BDD1 /* AddLocationViewController.swift */; };
-		427D4DE01DE65BE100F8BDD1 /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D4DDF1DE65BE100F8BDD1 /* LocationsTableViewCell.swift */; };
-		427D4DE21DE65E1100F8BDD1 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D4DE11DE65E1100F8BDD1 /* Storyboard.swift */; };
+		42A538A51DE6A50200C89C3E /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A538971DE6A50200C89C3E /* AddLocationViewController.swift */; };
+		42A538A61DE6A50200C89C3E /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A538981DE6A50200C89C3E /* LocationsTableViewController.swift */; };
+		42A538A71DE6A50200C89C3E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5389B1DE6A50200C89C3E /* Date.swift */; };
+		42A538A81DE6A50200C89C3E /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5389C1DE6A50200C89C3E /* Storyboard.swift */; };
+		42A538A91DE6A50200C89C3E /* LocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5389D1DE6A50200C89C3E /* LocationBuilder.swift */; };
+		42A538AA1DE6A50200C89C3E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5389F1DE6A50200C89C3E /* Location.swift */; };
+		42A538AB1DE6A50200C89C3E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A538A11DE6A50200C89C3E /* Networking.swift */; };
+		42A538AC1DE6A50200C89C3E /* Serialisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A538A21DE6A50200C89C3E /* Serialisable.swift */; };
+		42A538AD1DE6A50200C89C3E /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A538A41DE6A50200C89C3E /* LocationsTableViewCell.swift */; };
+		42A538B01DE6A51200C89C3E /* iss-pass-stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 42A538AF1DE6A51200C89C3E /* iss-pass-stub.json */; };
 		42D379401DE681040091C3E7 /* LocationsTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3793F1DE681040091C3E7 /* LocationsTableViewCellTests.swift */; };
-		42D379421DE683330091C3E7 /* Serialisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D379411DE683330091C3E7 /* Serialisable.swift */; };
-		42DCE3401DE6198B00BD1ED0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DCE33F1DE6198B00BD1ED0 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,27 +39,27 @@
 
 /* Begin PBXFileReference section */
 		421B40051DE6311000F1399E /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
-		421B40071DE6338200F1399E /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		425938C61DE5F6C30012FE81 /* ISSReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425938C91DE5F6C30012FE81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		425938CB1DE5F6C30012FE81 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 		425938D01DE5F6C30012FE81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		425938D21DE5F6C30012FE81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425938D51DE5F6C30012FE81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425938D71DE5F6C30012FE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		425938DC1DE5F6C30012FE81 /* ISSReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		425938E21DE5F6C30012FE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		425938ED1DE5F6FC0012FE81 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		425938EF1DE5F7210012FE81 /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
-		427D4DD41DE63CE200F8BDD1 /* iss-pass-stub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "iss-pass-stub.json"; sourceTree = "<group>"; };
 		427D4DD61DE63D3400F8BDD1 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
-		427D4DD81DE6430B00F8BDD1 /* LocationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationBuilder.swift; sourceTree = "<group>"; };
-		427D4DDA1DE6545E00F8BDD1 /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
-		427D4DDF1DE65BE100F8BDD1 /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
-		427D4DE11DE65E1100F8BDD1 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		42A538971DE6A50200C89C3E /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		42A538981DE6A50200C89C3E /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
+		42A5389B1DE6A50200C89C3E /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		42A5389C1DE6A50200C89C3E /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		42A5389D1DE6A50200C89C3E /* LocationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationBuilder.swift; sourceTree = "<group>"; };
+		42A5389F1DE6A50200C89C3E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		42A538A11DE6A50200C89C3E /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		42A538A21DE6A50200C89C3E /* Serialisable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialisable.swift; sourceTree = "<group>"; };
+		42A538A41DE6A50200C89C3E /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
+		42A538AF1DE6A51200C89C3E /* iss-pass-stub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "iss-pass-stub.json"; sourceTree = "<group>"; };
 		42D3793F1DE681040091C3E7 /* LocationsTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCellTests.swift; sourceTree = "<group>"; };
-		42D379411DE683330091C3E7 /* Serialisable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialisable.swift; sourceTree = "<group>"; };
-		42DCE33F1DE6198B00BD1ED0 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +101,15 @@
 		425938C81DE5F6C30012FE81 /* ISSReminder */ = {
 			isa = PBXGroup;
 			children = (
-				427D4DDE1DE65BB900F8BDD1 /* Model */,
-				427D4DDC1DE65B8E00F8BDD1 /* View */,
-				427D4DDD1DE65BA800F8BDD1 /* Controller */,
-				42DCE3431DE626F000BD1ED0 /* Helpers */,
-				425938EC1DE5F6F10012FE81 /* Protocols */,
+				42A5389E1DE6A50200C89C3E /* Model */,
+				42A538A31DE6A50200C89C3E /* View */,
+				42A538961DE6A50200C89C3E /* Controller */,
+				42A538991DE6A50200C89C3E /* Helpers */,
+				42A538A01DE6A50200C89C3E /* Protocols */,
 				425938C91DE5F6C30012FE81 /* AppDelegate.swift */,
 				425938CF1DE5F6C30012FE81 /* Main.storyboard */,
-				425938D21DE5F6C30012FE81 /* Assets.xcassets */,
 				425938D41DE5F6C30012FE81 /* LaunchScreen.storyboard */,
+				425938D21DE5F6C30012FE81 /* Assets.xcassets */,
 				425938D71DE5F6C30012FE81 /* Info.plist */,
 			);
 			path = ISSReminder;
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				425938E21DE5F6C30012FE81 /* Info.plist */,
-				427D4DD31DE63CE200F8BDD1 /* stubs */,
+				42A538AE1DE6A51200C89C3E /* Stubs */,
 				425938EF1DE5F7210012FE81 /* NetworkingTests.swift */,
 				421B40051DE6311000F1399E /* LocationTests.swift */,
 				427D4DD61DE63D3400F8BDD1 /* TestHelpers.swift */,
@@ -128,56 +128,64 @@
 			path = ISSReminderTests;
 			sourceTree = "<group>";
 		};
-		425938EC1DE5F6F10012FE81 /* Protocols */ = {
+		42A538961DE6A50200C89C3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				425938ED1DE5F6FC0012FE81 /* Networking.swift */,
-				42D379411DE683330091C3E7 /* Serialisable.swift */,
+				42A538971DE6A50200C89C3E /* AddLocationViewController.swift */,
+				42A538981DE6A50200C89C3E /* LocationsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42A538991DE6A50200C89C3E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				42A5389A1DE6A50200C89C3E /* Extensions */,
+				42A5389D1DE6A50200C89C3E /* LocationBuilder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		42A5389A1DE6A50200C89C3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42A5389B1DE6A50200C89C3E /* Date.swift */,
+				42A5389C1DE6A50200C89C3E /* Storyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42A5389E1DE6A50200C89C3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42A5389F1DE6A50200C89C3E /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42A538A01DE6A50200C89C3E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				42A538A11DE6A50200C89C3E /* Networking.swift */,
+				42A538A21DE6A50200C89C3E /* Serialisable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		427D4DD31DE63CE200F8BDD1 /* stubs */ = {
+		42A538A31DE6A50200C89C3E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				427D4DD41DE63CE200F8BDD1 /* iss-pass-stub.json */,
+				42A538A41DE6A50200C89C3E /* LocationsTableViewCell.swift */,
 			);
-			path = stubs;
+			path = View;
 			sourceTree = "<group>";
 		};
-		427D4DDC1DE65B8E00F8BDD1 /* View */ = {
+		42A538AE1DE6A51200C89C3E /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				427D4DDF1DE65BE100F8BDD1 /* LocationsTableViewCell.swift */,
+				42A538AF1DE6A51200C89C3E /* iss-pass-stub.json */,
 			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		427D4DDD1DE65BA800F8BDD1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				425938CB1DE5F6C30012FE81 /* LocationsTableViewController.swift */,
-				427D4DDA1DE6545E00F8BDD1 /* AddLocationViewController.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		427D4DDE1DE65BB900F8BDD1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				42DCE33F1DE6198B00BD1ED0 /* Location.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		42DCE3431DE626F000BD1ED0 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				421B40071DE6338200F1399E /* Date.swift */,
-				427D4DD81DE6430B00F8BDD1 /* LocationBuilder.swift */,
-				427D4DE11DE65E1100F8BDD1 /* Storyboard.swift */,
-			);
-			name = Helpers;
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427D4DD51DE63CE200F8BDD1 /* iss-pass-stub.json in Resources */,
+				42A538B01DE6A51200C89C3E /* iss-pass-stub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,16 +294,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427D4DD91DE6430B00F8BDD1 /* LocationBuilder.swift in Sources */,
+				42A538AC1DE6A50200C89C3E /* Serialisable.swift in Sources */,
+				42A538A91DE6A50200C89C3E /* LocationBuilder.swift in Sources */,
 				425938CA1DE5F6C30012FE81 /* AppDelegate.swift in Sources */,
-				427D4DDB1DE6545E00F8BDD1 /* AddLocationViewController.swift in Sources */,
-				421B40081DE6338200F1399E /* Date.swift in Sources */,
-				425938CC1DE5F6C30012FE81 /* LocationsTableViewController.swift in Sources */,
-				42D379421DE683330091C3E7 /* Serialisable.swift in Sources */,
-				425938EE1DE5F6FC0012FE81 /* Networking.swift in Sources */,
-				427D4DE01DE65BE100F8BDD1 /* LocationsTableViewCell.swift in Sources */,
-				427D4DE21DE65E1100F8BDD1 /* Storyboard.swift in Sources */,
-				42DCE3401DE6198B00BD1ED0 /* Location.swift in Sources */,
+				42A538A81DE6A50200C89C3E /* Storyboard.swift in Sources */,
+				42A538AB1DE6A50200C89C3E /* Networking.swift in Sources */,
+				42A538A51DE6A50200C89C3E /* AddLocationViewController.swift in Sources */,
+				42A538AD1DE6A50200C89C3E /* LocationsTableViewCell.swift in Sources */,
+				42A538A61DE6A50200C89C3E /* LocationsTableViewController.swift in Sources */,
+				42A538A71DE6A50200C89C3E /* Date.swift in Sources */,
+				42A538AA1DE6A50200C89C3E /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
