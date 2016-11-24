@@ -24,11 +24,19 @@
 		42A538AD1DE6A50200C89C3E /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A538A41DE6A50200C89C3E /* LocationsTableViewCell.swift */; };
 		42A538B01DE6A51200C89C3E /* iss-pass-stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 42A538AF1DE6A51200C89C3E /* iss-pass-stub.json */; };
 		42A538B31DE6A62E00C89C3E /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A538B21DE6A62E00C89C3E /* TestHelpers.swift */; };
+		42A538BB1DE6A8BB00C89C3E /* LocationsTableViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A538BA1DE6A8BB00C89C3E /* LocationsTableViewControllerUITests.swift */; };
 		42D379401DE681040091C3E7 /* LocationsTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3793F1DE681040091C3E7 /* LocationsTableViewCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		425938DD1DE5F6C30012FE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 425938BE1DE5F6C30012FE81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 425938C51DE5F6C30012FE81;
+			remoteInfo = ISSReminder;
+		};
+		42A538BD1DE6A8BB00C89C3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 425938BE1DE5F6C30012FE81 /* Project object */;
 			proxyType = 1;
@@ -59,6 +67,9 @@
 		42A538A41DE6A50200C89C3E /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
 		42A538AF1DE6A51200C89C3E /* iss-pass-stub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "iss-pass-stub.json"; sourceTree = "<group>"; };
 		42A538B21DE6A62E00C89C3E /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		42A538B81DE6A8BB00C89C3E /* ISSReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A538BA1DE6A8BB00C89C3E /* LocationsTableViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewControllerUITests.swift; sourceTree = "<group>"; };
+		42A538BC1DE6A8BB00C89C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D3793F1DE681040091C3E7 /* LocationsTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42A538B51DE6A8BB00C89C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +103,7 @@
 			children = (
 				425938C81DE5F6C30012FE81 /* ISSReminder */,
 				425938DF1DE5F6C30012FE81 /* ISSReminderTests */,
+				42A538B91DE6A8BB00C89C3E /* ISSReminderUITests */,
 				425938C71DE5F6C30012FE81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +113,7 @@
 			children = (
 				425938C61DE5F6C30012FE81 /* ISSReminder.app */,
 				425938DC1DE5F6C30012FE81 /* ISSReminderTests.xctest */,
+				42A538B81DE6A8BB00C89C3E /* ISSReminderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +216,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		42A538B91DE6A8BB00C89C3E /* ISSReminderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42A538BA1DE6A8BB00C89C3E /* LocationsTableViewControllerUITests.swift */,
+				42A538BC1DE6A8BB00C89C3E /* Info.plist */,
+			);
+			path = ISSReminderUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +263,24 @@
 			productReference = 425938DC1DE5F6C30012FE81 /* ISSReminderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		42A538B71DE6A8BB00C89C3E /* ISSReminderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A538BF1DE6A8BB00C89C3E /* Build configuration list for PBXNativeTarget "ISSReminderUITests" */;
+			buildPhases = (
+				42A538B41DE6A8BB00C89C3E /* Sources */,
+				42A538B51DE6A8BB00C89C3E /* Frameworks */,
+				42A538B61DE6A8BB00C89C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42A538BE1DE6A8BB00C89C3E /* PBXTargetDependency */,
+			);
+			name = ISSReminderUITests;
+			productName = ISSReminderUITests;
+			productReference = 42A538B81DE6A8BB00C89C3E /* ISSReminderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,6 +297,12 @@
 						ProvisioningStyle = Automatic;
 					};
 					425938DB1DE5F6C30012FE81 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A338Z65LE2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 425938C51DE5F6C30012FE81;
+					};
+					42A538B71DE6A8BB00C89C3E = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = A338Z65LE2;
 						ProvisioningStyle = Automatic;
@@ -272,6 +325,7 @@
 			targets = (
 				425938C51DE5F6C30012FE81 /* ISSReminder */,
 				425938DB1DE5F6C30012FE81 /* ISSReminderTests */,
+				42A538B71DE6A8BB00C89C3E /* ISSReminderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A538B01DE6A51200C89C3E /* iss-pass-stub.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A538B61DE6A8BB00C89C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +387,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42A538B41DE6A8BB00C89C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A538BB1DE6A8BB00C89C3E /* LocationsTableViewControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -333,6 +402,11 @@
 			isa = PBXTargetDependency;
 			target = 425938C51DE5F6C30012FE81 /* ISSReminder */;
 			targetProxy = 425938DD1DE5F6C30012FE81 /* PBXContainerItemProxy */;
+		};
+		42A538BE1DE6A8BB00C89C3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 425938C51DE5F6C30012FE81 /* ISSReminder */;
+			targetProxy = 42A538BD1DE6A8BB00C89C3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -505,6 +579,32 @@
 			};
 			name = Release;
 		};
+		42A538C01DE6A8BB00C89C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = A338Z65LE2;
+				INFOPLIST_FILE = ISSReminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rowungiles.ISSReminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ISSReminder;
+			};
+			name = Debug;
+		};
+		42A538C11DE6A8BB00C89C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = A338Z65LE2;
+				INFOPLIST_FILE = ISSReminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rowungiles.ISSReminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ISSReminder;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,6 +634,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		42A538BF1DE6A8BB00C89C3E /* Build configuration list for PBXNativeTarget "ISSReminderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A538C01DE6A8BB00C89C3E /* Debug */,
+				42A538C11DE6A8BB00C89C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
