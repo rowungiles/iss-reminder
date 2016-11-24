@@ -30,14 +30,11 @@ final class AddLocationViewController: UIViewController {
             // async operations ahead, should have UI denoting this for the user
             locationBuilder.findLocation(location: location, completion: { [weak self] placemark in
 
-                if let placemark = placemark, let `self` = self {
-                    
-                    self.delegate?.addLocation(vc: self, didFindLocation: name, placemark: placemark)
-                    
-                } else {
-                    
-                    // UI behaviour to alert the user of an issue
+                guard let placemark = placemark, let `self` = self else {
+                    return // UI behaviour to alert the user of an issue
                 }
+                
+                self.delegate?.addLocation(vc: self, didFindLocation: name, placemark: placemark)
             })
         }
     }

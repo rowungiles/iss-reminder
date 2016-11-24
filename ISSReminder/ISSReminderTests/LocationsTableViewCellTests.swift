@@ -9,7 +9,7 @@
 import XCTest
 @testable import ISSReminder
 
-class LocationsTableViewCellTests: XCTestCase {
+final class LocationsTableViewCellTests: XCTestCase {
     
     func testConfigure_WhenCalled_SetsLabelText() {
         
@@ -55,5 +55,4 @@ class LocationsTableViewCellTests: XCTestCase {
         XCTAssertEqual(cell.label.text, "")
         XCTAssertEqual(cell.passTime.text, "")
     }
-    
 }

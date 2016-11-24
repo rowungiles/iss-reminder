@@ -60,7 +60,6 @@ extension LocationTests {
         location.nextRiseTime = "1"
         
         XCTAssertTrue(mockDelegate.didCallUpdatePassTime)
-        
     }
 }
 

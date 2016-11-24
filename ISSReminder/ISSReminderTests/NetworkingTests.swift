@@ -9,8 +9,6 @@
 import XCTest
 @testable import ISSReminder
 
-private final class NetworkSpy: Networking {}
-
 final class NetworkingTests: XCTestCase {
 
     fileprivate var spy: NetworkSpy!
@@ -136,3 +134,5 @@ extension NetworkingTests {
         })
     }
 }
+
+private final class NetworkSpy: Networking {}
