@@ -31,7 +31,7 @@ final class AddLocationViewController: UIViewController {
             locationBuilder.findLocation(location: location, completion: { [weak self] placemark in
 
                 guard let placemark = placemark, let `self` = self else {
-                    return // UI behaviour to alert the user of an issue
+                    return print("Error") // UI behaviour to alert the user of an issue
                 }
                 
                 self.delegate?.addLocation(vc: self, didFindLocation: name, placemark: placemark)

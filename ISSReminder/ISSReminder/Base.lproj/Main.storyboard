@@ -114,18 +114,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htX-Nh-yEi">
-                                <rect key="frame" x="47" y="318" width="281" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RfF-Po-nGh">
-                                <rect key="frame" x="47" y="356" width="281" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBm-07-tnF" userLabel="Container">
+                                <rect key="frame" x="47" y="299" width="281" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Label" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htX-Nh-yEi" userLabel="Label Field">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RfF-Po-nGh">
+                                        <rect key="frame" x="0.5" y="38" width="281" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="htX-Nh-yEi" secondAttribute="trailing" id="0mH-i9-kuE"/>
+                                    <constraint firstItem="RfF-Po-nGh" firstAttribute="width" secondItem="htX-Nh-yEi" secondAttribute="width" id="HlJ-lI-aNZ"/>
+                                    <constraint firstItem="htX-Nh-yEi" firstAttribute="leading" secondItem="IBm-07-tnF" secondAttribute="leading" id="Nkj-ch-wb6"/>
+                                    <constraint firstItem="RfF-Po-nGh" firstAttribute="top" secondItem="htX-Nh-yEi" secondAttribute="bottom" constant="8" id="Upe-GS-35H"/>
+                                    <constraint firstItem="htX-Nh-yEi" firstAttribute="top" secondItem="IBm-07-tnF" secondAttribute="top" id="i4A-nE-kcb"/>
+                                    <constraint firstItem="RfF-Po-nGh" firstAttribute="centerX" secondItem="htX-Nh-yEi" secondAttribute="centerX" id="np3-ra-VpQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="RfF-Po-nGh" secondAttribute="bottom" id="uBQ-Vv-0qb"/>
+                                </constraints>
+                            </view>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3n-uZ-6Dx">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
@@ -141,14 +156,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RfF-Po-nGh" firstAttribute="leading" secondItem="htX-Nh-yEi" secondAttribute="leading" id="2p2-SW-kgX"/>
-                            <constraint firstItem="htX-Nh-yEi" firstAttribute="width" secondItem="WcI-QT-t4v" secondAttribute="width" multiplier="0.75" id="4Ai-Q4-ezh"/>
-                            <constraint firstItem="htX-Nh-yEi" firstAttribute="centerY" secondItem="WcI-QT-t4v" secondAttribute="centerY" id="6RY-3g-OkI"/>
-                            <constraint firstItem="RfF-Po-nGh" firstAttribute="width" secondItem="htX-Nh-yEi" secondAttribute="width" id="KVW-g2-OW5"/>
+                            <constraint firstItem="IBm-07-tnF" firstAttribute="centerY" secondItem="WcI-QT-t4v" secondAttribute="centerY" id="GFH-L7-yqN"/>
+                            <constraint firstItem="IBm-07-tnF" firstAttribute="width" secondItem="WcI-QT-t4v" secondAttribute="width" multiplier="0.75" id="J2n-FJ-yCl"/>
                             <constraint firstItem="E3n-uZ-6Dx" firstAttribute="leading" secondItem="WcI-QT-t4v" secondAttribute="leading" id="LwM-tC-E8D"/>
-                            <constraint firstItem="RfF-Po-nGh" firstAttribute="top" secondItem="htX-Nh-yEi" secondAttribute="bottom" constant="8" id="Snh-f9-k93"/>
                             <constraint firstAttribute="trailing" secondItem="E3n-uZ-6Dx" secondAttribute="trailing" id="Svg-ed-cGI"/>
-                            <constraint firstItem="htX-Nh-yEi" firstAttribute="centerX" secondItem="WcI-QT-t4v" secondAttribute="centerX" id="V3p-i5-h63"/>
+                            <constraint firstItem="IBm-07-tnF" firstAttribute="centerX" secondItem="WcI-QT-t4v" secondAttribute="centerX" id="lLg-a5-xIG"/>
                             <constraint firstItem="E3n-uZ-6Dx" firstAttribute="top" secondItem="Lem-mj-qTk" secondAttribute="bottom" id="p3s-Cs-OAL"/>
                         </constraints>
                     </view>

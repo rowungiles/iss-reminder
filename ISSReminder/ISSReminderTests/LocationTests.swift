@@ -22,6 +22,7 @@ final class LocationTests: XCTestCase {
 }
 
 extension LocationTests {
+    
     func testLocationDiscoverRiseTime_WhenGivenData_SetsRiseTime() {
         
         let location = Location(label: "", coordinates: Coordinates(50,50))!
@@ -34,7 +35,7 @@ extension LocationTests {
         XCTAssertEqual(actual, expected)
     }
     
-    func testLocationDiscoverRiseTime_WhenGivenError_SetsBlankTime() {
+    func testLocationDiscoverRiseTime_WhenGivenError_ReturnsNilTime() {
         
         let location = Location(label: "", coordinates: Coordinates(50,50))!
 
@@ -45,10 +46,9 @@ extension LocationTests {
         
         XCTAssertEqual(actual, expected)
         
-        let expected2 = ""
         let actual2 = location.discoverRiseTime(from: .error(TestableError.generic))
         
-        XCTAssertEqual(actual2, expected2)
+        XCTAssertNil(actual2)
     }
     
     func testDiscoverTime_WhenSet_CallsDelegate() {

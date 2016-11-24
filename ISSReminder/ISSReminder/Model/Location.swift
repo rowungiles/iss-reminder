@@ -50,12 +50,11 @@ final class Location: NSObject, Networking {
     let label: String
     let coordinates: Coordinates
     
-    var nextRiseTime: String = "tbc" {
+    var nextRiseTime: String? = "calculating..." {
         
         didSet {
-            
-            if oldValue != nextRiseTime {
-                delegate?.didUpdatePassTime(for: self, time: nextRiseTime)
+            if let newValue = nextRiseTime, newValue != oldValue {
+                delegate?.didUpdatePassTime(for: self, time: newValue)
             }
         }
     }
@@ -122,9 +121,9 @@ extension Location {
         })
     }
     
-    func discoverRiseTime(from result: NetworkingResult) -> String {
+    func discoverRiseTime(from result: NetworkingResult) -> String? {
 
-        var nextRiseTime = ""
+        var nextRiseTime: String?
         
         switch result {
         case let .success(data):

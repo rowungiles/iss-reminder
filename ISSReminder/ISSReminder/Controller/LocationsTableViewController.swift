@@ -22,6 +22,8 @@ final class LocationsTableViewController: UITableViewController, Serialisable {
         
         if let locations: [Location] = unarchive(pathExtension: Archive.path.rawValue) {
             
+            locations.forEach { $0.delegate = self }
+            
             self.locations = locations
             
             refreshLocations(self)
